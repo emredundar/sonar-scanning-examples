@@ -8,13 +8,12 @@ pipeline {
       steps {
         echo 'ready to start'
         sh 'pwd'
-        sh 'printenv'
-        sh 'source /etc/profile.d/maven.sh'
+        sh '/opt/maven/apache-maven-3.5.3/bin/mvn -version'
       }
     }
     stage('build') {
       steps {
-        sh 'mvn -version'
+        sh 'printenv'
       }
     }
   }
