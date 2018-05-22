@@ -7,6 +7,12 @@ pipeline {
       }
       steps {
         echo 'ready to start'
+        sh 'pwd'
+      }
+    }
+    stage('build') {
+      steps {
+        sh 'mvn -version'
       }
     }
   }
