@@ -8,13 +8,17 @@ pipeline {
       steps {
         echo 'ready to start'
         sh 'pwd'
-        sh 'mvn=/opt/maven/apache-maven-3.5.3/bin/mvn'
-        sh 'mvn -version'
+        sh '''
+
+
+
+/opt/maven/apache-maven-3.5.3/bin/mvn -version'''
       }
     }
     stage('build') {
       steps {
-        sh 'printenv'
+        sh '''cd sonarqube-scanner-maven /
+mvn clean install sonar:sonar'''
       }
     }
   }
