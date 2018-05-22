@@ -8,7 +8,8 @@ pipeline {
       steps {
         echo 'ready to start'
         sh 'pwd'
-        sh '/opt/maven/apache-maven-3.5.3/bin/mvn -version'
+        sh 'mvn=/opt/maven/apache-maven-3.5.3/bin/mvn'
+        sh 'mvn -version'
       }
     }
     stage('build') {
