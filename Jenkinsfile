@@ -8,6 +8,7 @@ pipeline {
       steps {
         echo 'ready to start'
         sh 'pwd'
+        sh 'source /etc/profile.d/maven.sh'
       }
     }
     stage('build') {
