@@ -7,7 +7,7 @@ public class HelloWorld {
   void    foo2(int value) { }
   int     foo3(int value) { return 0; } // Noncompliant
   Object  foo4(int value) { return null; }
-  MyClass foo5(MyClass value) {return null; } // Noncompliant
+  HelloWorld foo5(HelloWorld value) {return null; } // Noncompliant
   int     foo6(int value, String name) { return 0; }
 
   public void coveredByUnitTest() {
