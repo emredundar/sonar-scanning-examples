@@ -1,6 +1,8 @@
 package example;
 
 public class HelloWorld {
+  
+  HelloWorld(HelloWorld hw) { }
 
   public void coveredByUnitTest() {
     System.out.println("coveredByUnitTest1");
