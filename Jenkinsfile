@@ -18,7 +18,7 @@ pipeline {
     stage('build') {
       steps {
         sh '''cd sonarqube-scanner-maven /
-/opt/maven/apache-maven-3.5.3/bin/mvn clean install'''
+/opt/maven/apache-maven-3.5.3/bin/mvn clean install sonar:sonar -Dsonar.login=c83855c2be5760fd53f53faf1d2f26a914fb6d23'''
       }
     }
   }
