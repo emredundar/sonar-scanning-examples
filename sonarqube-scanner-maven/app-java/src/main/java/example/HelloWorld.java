@@ -17,4 +17,9 @@ public class HelloWorld {
     System.out.println("notCovered");
   }
 
+  public void tempService() {
+    System.out.println("Service for issue");
+  }
+
+
 }
